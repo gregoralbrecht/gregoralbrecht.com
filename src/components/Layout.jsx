@@ -6,7 +6,8 @@ import 'normalize.css'
 import { ThemeProvider, theme, Global } from '../style'
 import { resetCSS } from '../style/resetCSS'
 
-import { Box, Flex } from './index'
+import { Box } from './Box'
+import { Flex } from './Flex'
 
 const Layout = ({ children }) => (
   <ThemeProvider theme={theme}>
