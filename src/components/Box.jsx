@@ -11,7 +11,7 @@ import {
   flexbox,
   position,
   grid,
-} from '../../util/style'
+} from '../style'
 
 const sx = (props) => css(props.sx)(props.theme)
 // eslint-disable-next-line no-underscore-dangle

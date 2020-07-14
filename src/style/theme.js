@@ -2,7 +2,7 @@ const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
 const fonts = {
   body:
-    'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    '"Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
   heading: 'inherit',
   monospace: 'Menlo, monospace',
 }
@@ -36,4 +36,11 @@ export const theme = {
   fontWeights,
   lineHeights,
   colors,
+  styles: {
+    root: {
+      fontFamily: 'body',
+      lineHeight: 'body',
+      fontWeight: 'body',
+    },
+  },
 }

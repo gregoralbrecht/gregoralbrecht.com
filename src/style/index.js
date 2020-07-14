@@ -19,7 +19,6 @@ import { ThemeProvider } from 'emotion-theming'
 import propTypes, { propType } from '@styled-system/prop-types'
 
 import { theme } from './theme'
-import { resetCSS } from './resetCSS'
 
 // eslint-disable-next-line no-shadow
 const sx = (props) => css(props.sx)(props.theme)
@@ -30,7 +29,6 @@ export {
   theme,
   sx,
   Global,
-  resetCSS,
   propTypes,
   propType,
   compose,
