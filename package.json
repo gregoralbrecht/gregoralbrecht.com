@@ -1,0 +1,63 @@
+{
+  "name": "gregoralbrecht.com",
+  "description": "My personal website",
+  "version": "0.0.1",
+  "author": "Gregor Albrecht <hello@gregoralbrecht.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gregoralbrecht/gregoralbrecht.com"
+  },
+  "bugs": {
+    "url": "https://github.com/gregoralbrecht/gregoralbrecht.com/issues"
+  },
+  "keywords": [
+    "react",
+    "gatsby",
+    "styled-components",
+    "styled-system"
+  ],
+  "scripts": {
+    "dev": "gatsby develop -o",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "format": "prettier --write \"src/**/*.{jsx,js}\"",
+    "lint:scripts": "eslint './src/**/*.{jsx,js}'",
+    "lint:styles": "stylelint './src/**/*.{jsx,js}'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "yarn lint:scripts && yarn lint:styles"
+    }
+  },
+  "dependencies": {
+    "@styled-system/prop-types": "^5.1.5",
+    "gatsby": "^2.21.7",
+    "gatsby-image": "^2.2.40",
+    "gatsby-plugin-manifest": "^2.2.42",
+    "gatsby-plugin-offline": "^3.2.0",
+    "gatsby-plugin-sharp": "^2.4.7",
+    "gatsby-source-filesystem": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.5.0",
+    "prop-types": "^15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-ga": "^2.7.0",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@gregoralbrecht/eslint-config": "^1.1.1",
+    "babel-preset-gatsby": "^0.4.0",
+    "eslint": "^7.4.0",
+    "husky": "^3.1.0",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "stylelint": "11.1.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  }
+}
