@@ -1089,10 +1089,10 @@
     "@ardatan/aggregate-error" "0.0.1"
     camel-case "4.1.1"
 
-"@gregoralbrecht/eslint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@gregoralbrecht/eslint-config/-/eslint-config-1.1.1.tgz#306f12347e008132caf662aa7b95511957565412"
-  integrity sha512-ogYkZVjmX6X0wK3nbtSDo1MpDrx4jqs4+drYtOagcT04/0iIycaXQVBqtH4u/twSsVZnSMY7TE3zzWdaWONxMw==
+"@gregoralbrecht/eslint-config@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@gregoralbrecht/eslint-config/-/eslint-config-1.1.2.tgz#1026acc7e63f7afff898498a5e193c6731367be6"
+  integrity sha512-YTG9J747UmWWyxrC3GZnf4BnIzt+P0KS0N3NzPClRIljdNPeHytZyrwURgU9xVLV3ZaYfHVn2xh54AWIKB3IPQ==
   dependencies:
     babel-eslint "^10.1.0"
     eslint "^7.2.0"

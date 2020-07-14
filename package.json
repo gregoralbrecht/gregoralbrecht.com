@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@gregoralbrecht/eslint-config": "^1.1.1",
+    "@gregoralbrecht/eslint-config": "^1.1.2",
     "babel-preset-gatsby": "^0.4.0",
     "eslint": "^7.4.0",
     "husky": "^3.1.0",
