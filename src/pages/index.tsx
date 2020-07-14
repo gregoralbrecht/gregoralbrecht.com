@@ -1,10 +1,12 @@
 import React from 'react'
 
-import { Layout } from '../components'
+import { Layout, Box } from '../components'
 
 const HomePage = () => (
   <Layout>
-    <h1>hello world</h1>
+    <Box sx={{ bg: 'primary' }}>
+      <h1>hello world</h1>
+    </Box>
   </Layout>
 )
 
