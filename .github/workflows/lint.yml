@@ -30,6 +30,11 @@ jobs:
       - name: Deduplicate deps
         run: yarn deduplicate:check
 
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
       - name: Wait for the Netlify Preview
         uses: jakepartusch/wait-for-netlify-action@v1
         id: netlify
