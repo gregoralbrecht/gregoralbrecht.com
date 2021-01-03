@@ -22,49 +22,42 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "format": "prettier --write \"src/**/*.{jsx,js}\"",
+    "lint": "yarn lint:scripts && yarn lint:styles",
     "lint:scripts": "eslint './src/**/*.{jsx,js}'",
-    "lint:styles": "stylelint './src/**/*.{jsx,js}'"
+    "lint:styles": "stylelint './src/**/*.{jsx,js}'",
+    "deduplicate": "yarn-deduplicate -s fewer yarn.lock",
+    "deduplicate:check": "yarn-deduplicate -s fewer yarn.lock --list --fail"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "yarn lint:scripts && yarn lint:styles"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
-    "@emotion/styled": "^10.0.27",
-    "@styled-system/css": "^5.1.5",
-    "@styled-system/prop-types": "^5.1.5",
-    "@styled-system/should-forward-prop": "^5.1.5",
-    "emotion-theming": "^10.0.27",
-    "gatsby": "^2.21.7",
+    "gatsby": "^2.31.0-next.0",
     "gatsby-image": "^2.2.40",
-    "gatsby-plugin-manifest": "^2.2.42",
-    "gatsby-plugin-offline": "^3.2.0",
-    "gatsby-plugin-sharp": "^2.4.7",
+    "gatsby-plugin-image": "^0.6.0-next.0",
+    "gatsby-plugin-sharp": "^2.13.0-next.0",
     "gatsby-source-filesystem": "^2.3.0",
-    "gatsby-transformer-sharp": "^2.5.0",
-    "normalize.css": "^8.0.1",
+    "gatsby-transformer-sharp": "^2.11.0-next.0",
     "prop-types": "^15.7.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-ga": "^2.7.0",
-    "styled-system": "^5.1.5",
-    "typeface-work-sans": "^0.0.72"
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "typeface-work-sans": "^1.1.13"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@gregoralbrecht/eslint-config": "^1.1.2",
-    "babel-preset-gatsby": "^0.4.0",
+    "babel-preset-gatsby": "^0.9.1",
     "eslint": "^7.4.0",
-    "husky": "^3.1.0",
+    "husky": "^4.3.6",
     "prettier": "^2.0.5",
-    "pretty-quick": "^2.0.1",
+    "pretty-quick": "^3.1.0",
     "stylelint": "11.1.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-processor-styled-components": "^1.10.0"
+    "stylelint-processor-styled-components": "^1.10.0",
+    "yarn-deduplicate": "^3.1.0"
   }
 }
