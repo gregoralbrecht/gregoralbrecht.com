@@ -26,3 +26,6 @@ jobs:
 
       - name: Lint code
         run: yarn lint
+
+      - name: Deduplicate deps
+        run: yarn deduplicate:check
